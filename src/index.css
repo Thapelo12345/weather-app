@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@font-face{
+  font-family: "mainHeader";
+  src: url("./assets/fonts/BricolageGrotesque-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: serif;
+}
+
+@font-face{
+  font-family: "smallerText";
+  src: url("./assets/fonts/DMSans-Light.ttf") format("truetype");
+  font-weight:600;
+  font-style: normal;
+}
+
+.main-Font{font-family: "mainHeader";}
+.smaller-text{font-family: "smallerText";}
+.sideMenuLabels{
+  @apply  flex flex-row justify-between text-xs font-bold rounded-lg p-2 w-[93%] ;
+}
+
+:root {
+  --background: hsl(243, 96%, 9%);
+  --foreground: #171717;
+}
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  margin: 10px;
+  background: transparent;
+  opacity: 0.1;
+}
+
+.thumb::-webkit-scrollbar-thumb {
+  background-color: rgb(58, 57, 58);
+  width: 2px;
+  border-radius: 10px;
+  opacity: 0.1
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  opacity: 0.1
+}
+
+body {
+  background: hsl(243, 96%, 9%);
+  width: 100vw;
+  height: fit-content;
+  color: var(--foreground);
+  font-family: "mainHeader";
+  overflow-x: hidden;
+}
