@@ -12,7 +12,10 @@ export default function DatePlace() {
 
  const resizeHandler = () => setCrrWidth(window.innerWidth);
 
-  useEffect(() => {resizeHandler();}, []);
+  useEffect(() => {
+    resizeHandler();
+   console.log(`Use effect : ${process.env.PUBLIC_URL}`)
+  }, []);
 
   useGSAP(() => {
     gsap.fromTo(
