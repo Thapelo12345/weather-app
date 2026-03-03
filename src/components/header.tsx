@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { getDataAction } from "../getData";
 import type { RootState } from "../statemanagement/store";
 import SearchHistory from "./ui/searchHistory";
