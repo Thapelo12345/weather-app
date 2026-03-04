@@ -429,8 +429,7 @@ export default function Header() {
         ></input>
         <img
           className="absolute left-5 top-4"
-          // src="./images/icon-search.svg"
-          src="/weather-app/images/icon-search.svg"
+          src="/images/icon-search.svg"
           alt="search icon"
         />
 

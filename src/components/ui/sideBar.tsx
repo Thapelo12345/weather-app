@@ -38,7 +38,7 @@ export default function SideBar({ time, temperature, forcastUrl }: PROPS) {
     <div className="spin rounded-md bg-[hsl(243,23%,30%)] py-1 p-2 flex flex-row w-[92%] items-center justify-between m-2">
       {!loading && (
         <div className="w-fit text-xs flex flex-row items-center justify-evenly">
-          <img className="w-8 h-8 mx-1" src={forcastUrl} alt="cloud image" />
+          <img className="w-8 h-8 mx-1" src={`/${forcastUrl}`} alt="cloud image" />
           <h6> {time}</h6>
         </div>
       )}
