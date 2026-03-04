@@ -429,14 +429,14 @@ export default function Header() {
         ></input>
         <img
           className="absolute left-5 top-4"
-          src="./images/icon-search.svg"
+          // src="./images/icon-search.svg"
+          src="/weather-app/images/icon-search.svg"
           alt="search icon"
         />
 
         <motion.button
           className="text-sm px-4 m-2 bg-[hsl(233,67%,56%)] hover:bg-[hsl(248,70%,36%)] p-2 rounded-lg cursor-pointer"
           whileHover={{
-            // border: "2px solid blue",
             outline: "2px solid blue",
             boxShadow: "inset 1px 1px 5px black",
           }}
