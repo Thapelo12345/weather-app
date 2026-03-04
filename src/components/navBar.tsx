@@ -17,7 +17,7 @@ useEffect(()=>{store.dispatch(setDataType(crrState))},[crrState])
     <nav className=" mt-0 flex flex-row items-center justify-between">
       <div>
         <img
-          src="/images/logo.svg"
+          src="../../images/logo.svg"
           alt="flower"
           width={160}
           height={160}
