@@ -1,6 +1,5 @@
 {
   "name": "weather-app",
-  "homepage": "http://Thapelo12345.github.io/weather-app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
+   
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
