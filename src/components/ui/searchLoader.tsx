@@ -12,7 +12,7 @@ export default function SearchLoader() {
         repeat: Infinity
       }}
       >
-        <img src="/images/icon-loading.svg" alt="search icon" />
+        <img src={`${import.meta.env.BASE_URL}images/icon-loading.svg`} alt="search icon" />
       </motion.div>
       <h1 className="text-sm p-1 font-sans font-extralight">Search in progress</h1>
     </div>

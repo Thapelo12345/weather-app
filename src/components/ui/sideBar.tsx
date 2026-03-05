@@ -17,15 +17,13 @@ export default function SideBar({ time, temperature, forcastUrl }: PROPS) {
       gsap.fromTo(
         ".spin",
         {
-          rotateX: 360,
-          scaleX: 0.9,
+          x: -200,
           duration: 0.7,
           delay: 0.5,
           stagger: 0.5,
         },
         {
-          rotateX: 0,
-          scaleX: 1,
+          x: 0,
           duration: 0.7,
           delay: 0.5,
           stagger: 0.5,
