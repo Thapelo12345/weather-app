@@ -39,8 +39,8 @@ export default function DatePlace() {
         backgroundImage: load
           ? "none"
           : crrWidth >= 1024
-            ? "url(/images/large.svg)"
-            :"url(/images/bg-today-small.svg)",
+            ? `url(${import.meta.env.BASE_URL}images/large.svg)`
+            :`url(${import.meta.env.BASE_URL}images/bg-today-small.svg)`,
       }}
     >
       {load && (

@@ -55,14 +55,14 @@ function getDayName(dayNumber: number): string {
 
 function theWeatherIs(code: number): string {
   if(code == 0) return "/images/icon-sunny.webp"
-  else if(code >= 1 && code <= 3) return "/images/icon-partly-cloudy.webp"
-  else if(code >= 45 && code <= 48) return "/images/icon-fog.webp"
-  else if(code >= 51 && code <= 57) return "/images/icon-drizzle.webp"
-  else if(code >= 61 && code <= 67) return "/images/icon-rain.webp"
-  else if(code >= 71 && code <= 77) return "/images/snowflake.png"
-  else if(code >= 80 && code <= 82) return "/images/rain_shower.png"
-  else if(code >= 85 && code <= 86) return "/images/icon-snow.webp"
-  else if(code >= 95) return "/images/icon-storm.webp"
+  else if(code >= 1 && code <= 3) return `${import.meta.env.BASE_URL}images/icon-partly-cloudy.webp`
+  else if(code >= 45 && code <= 48) return `${import.meta.env.BASE_URL}images/icon-fog.webp`
+  else if(code >= 51 && code <= 57) return `${import.meta.env.BASE_URL}images/icon-drizzle.webp`
+  else if(code >= 61 && code <= 67) return `${import.meta.env.BASE_URL}images/icon-rain.webp`
+  else if(code >= 71 && code <= 77) return `${import.meta.env.BASE_URL}images/snowflake.png`
+  else if(code >= 80 && code <= 82) return `${import.meta.env.BASE_URL}images/rain_shower.png`
+  else if(code >= 85 && code <= 86) return `${import.meta.env.BASE_URL}images/icon-snow.webp`
+  else if(code >= 95) return `${import.meta.env.BASE_URL}images/icon-storm.webp`
   else return ""
 }//end of weatherName
 
