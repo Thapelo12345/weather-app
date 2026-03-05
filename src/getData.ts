@@ -54,7 +54,7 @@ function getDayName(dayNumber: number): string {
 }//end of get day function
 
 function theWeatherIs(code: number): string {
-  if(code == 0) return "/images/icon-sunny.webp"
+  if(code == 0) return `${import.meta.env.BASE_URL}images/icon-sunny.webp`
   else if(code >= 1 && code <= 3) return `${import.meta.env.BASE_URL}images/icon-partly-cloudy.webp`
   else if(code >= 45 && code <= 48) return `${import.meta.env.BASE_URL}images/icon-fog.webp`
   else if(code >= 51 && code <= 57) return `${import.meta.env.BASE_URL}images/icon-drizzle.webp`
