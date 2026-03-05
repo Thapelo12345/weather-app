@@ -31,7 +31,7 @@ useEffect(()=>{store.dispatch(setDataType(crrState))},[crrState])
           onClick={() => setOpenMenu(!openMenu)}
         >
           <img
-            src="/images/icon-units.svg"
+            src={`${import.meta.env.BASE_URL}images/icon-units.svg`}
             alt="settings"
             width={14}
             height={14}
@@ -39,7 +39,7 @@ useEffect(()=>{store.dispatch(setDataType(crrState))},[crrState])
           />
           <h2 className="m-2">Units</h2>
           <img
-            src={openMenu ? "/images/icon-dropdown.svg" : "/images/icon-up.svg"}
+            src={openMenu ? `${import.meta.env.BASE_URL}images/icon-dropdown.svg` : `${import.meta.env.BASE_URL}images/icon-up.svg`}
             alt="arrow image"
             width={10}
             height={10}
@@ -68,7 +68,7 @@ useEffect(()=>{store.dispatch(setDataType(crrState))},[crrState])
               Celsius(C)
               {crrState == "imperial" && (
                 <img
-                  src="/images/icon-checkmark.svg"
+                  src={`${import.meta.env.BASE_URL}images/icon-checkmark.svg`}
                   alt="Tick image"
                   width={160}
                   height={160}
@@ -82,7 +82,7 @@ useEffect(()=>{store.dispatch(setDataType(crrState))},[crrState])
               Fahrenheit(F)
               {crrState == "metric" && (
                 <img
-                  src="/images/icon-checkmark.svg"
+                  src={`${import.meta.env.BASE_URL}images/icon-checkmark.svg`}
                   alt="Tick image"
                   width={160}
                   height={160}
@@ -99,7 +99,7 @@ useEffect(()=>{store.dispatch(setDataType(crrState))},[crrState])
               km/h
               {crrState == "imperial" && (
                 <img
-                  src="/images/icon-checkmark.svg"
+                  src={`${import.meta.env.BASE_URL}images/icon-checkmark.svg`}
                   alt="Tick image"
                   width={160}
                   height={160}
@@ -113,7 +113,7 @@ useEffect(()=>{store.dispatch(setDataType(crrState))},[crrState])
               mph
               {crrState == "metric" && (
                 <img
-                  src="/images/icon-checkmark.svg"
+                  src={`${import.meta.env.BASE_URL}images/icon-checkmark.svg`}
                   alt="Tick image"
                   width={160}
                   height={160}
@@ -132,7 +132,7 @@ useEffect(()=>{store.dispatch(setDataType(crrState))},[crrState])
               Millimeters(mm)
               {crrState == "imperial" && (
                 <img
-                  src="/images/icon-checkmark.svg"
+                  src={`${import.meta.env.BASE_URL}images/icon-checkmark.svg`}
                   alt="Tick image"
                   width={160}
                   height={160}
@@ -146,7 +146,7 @@ useEffect(()=>{store.dispatch(setDataType(crrState))},[crrState])
               Inches(in)
               {crrState == "metric" && (
                 <img
-                  src="/images/icon-checkmark.svg"
+                  src={`${import.meta.env.BASE_URL}images/icon-checkmark.svg`}
                   alt="Tick image"
                   width={160}
                   height={160}
